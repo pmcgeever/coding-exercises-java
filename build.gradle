@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+jar {
+    baseName = 'coding-exercise-examples'
+    version = '0.0.1'
+}
+
+task wrapper(type: Wrapper) {
+     gradleVersion = '1.12'
+}
